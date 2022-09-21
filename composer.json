@@ -1,4 +1,5 @@
 {
+  "name": "wr2net/mailtrapForDev",
   "description": "description",
   "minimum-stability": "stable",
   "type": "library",
