@@ -1,6 +1,6 @@
 {
   "name": "wr2net/mailtrap-for-dev",
-  "description": "description",
+  "description": "Facilitation for using mailtrap with phpmailer for development environment.",
   "minimum-stability": "stable",
   "type": "library",
   "license": "MIT",
