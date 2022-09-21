@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SendMail\Interfaces;
+namespace SMail\SendMail\Interfaces;
 
 /**
  * Interface SendMailInterface
@@ -11,12 +11,8 @@ interface SendMailInterface
 {
     /**
      * @param array $credentials
-     */
-    public function __construct(array $credentials);
-
-    /**
-     * @param $sendData
+     * @param array $sendData
      * @return array
      */
-    public function sendEmail($sendData): array;
+    public function sendEmail(array $credentials, array $sendData): array;
 }
