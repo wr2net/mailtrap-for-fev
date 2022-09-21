@@ -1,0 +1,22 @@
+{
+  "description": "description",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wagner Rigoli da Rosa",
+      "email": "wagnerr2@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^6.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": [
+        "src"
+      ]
+    }
+  }
+}
