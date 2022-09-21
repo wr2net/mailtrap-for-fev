@@ -1,17 +1,15 @@
 <?php
 
-namespace App\SendMail\Services;
+namespace SMail\MailtrapService;
 
-use SMail\SendMail\Interfaces\SendMailInterface;
 use PHPMailer\PHPMailer\PHPMailer;
 
 /**
  * Class SendMailService
- * @package SMail\SendMail\Services
- * @template-implements SendMailInterface
+ * @package SMail\MailtrapService
  * PHP Version 7.4
  */
-class SendMailService implements SendMailInterface
+class SMail
 {
     /**
      * @var PHPMailer
@@ -34,11 +32,15 @@ class SendMailService implements SendMailInterface
     }
 
     /**
+     * Expected array credentials with user, password, mail_from and name_from keys
+     *
+     * Expected array sendData with to, to_name, subject and message keys
+     *
      * @param array $credentials
      * @param array $sendData
      * @return array
      */
-    public function sendEmail(array $credentials, array $sendData): array
+    public function calltrap(array $credentials, array $sendData): array
     {
         $to = $sendData['to'];
         $name = $sendData['to_name'];
